@@ -14,14 +14,15 @@ https://cn.uber.com
 
 **GET:**
 
-| Path | Required Headers |
-|------|------------------|
-| /rt/onboarding/dynamic-form/step/{driverUUID} | x-uber-token |
+| Path | Required Headers | Example Headers |
+|------|------------------|------------------|
+| /rt/onboarding/dynamic-form/step/{driverUUID} | x-uber-token ||
+| /rt/onboarding/signup | x-uber-device-language ||
+| /rt/drivers/{driverUUID}/vault | x-uber-token ||
+| /rt/onboarding/step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token ||
 
 ```
-/rt/onboarding/signup
-/rt/drivers/{driverUUID}/vault
-/rt/onboarding/step/{partnerUuid}
+
 /rt/onboarding/unified-step/{partnerUuid}
 /rt/onboarding/dynamic-form/signup
 /rt/onboarding/dynamic-form/upgrade
