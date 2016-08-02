@@ -36,20 +36,16 @@ https://cn.uber.com
 | /rt/riders/auth-alipay |||
 | /rt/riders/sign-rsa || input |
 | /rt/fare/estimate || origin_lat <br /> origin_lng <br /> vehicle_view_ids <br /> destination_lat <br /> destination_lng |
+| /rt/invitations  | x-uber-token ||
+| /rt/locations/locations |||
+| /rt/locations/tag/locations |||
+| /rt/locations/upfront |||
+| /rt/locations/v2/prediction/details |||
+| /rt/locations/v2/predictions |||
+| /rt/locations/v2/search |||
+| /rt/payment/payment_profiles/{id}/balance | x-uber-token ||
 
 ```
-
-/rt/invitations
-/rt/locations/locations
-/rt/locations/tag/locations
-/rt/locations/upfront
-/rt/locations/v2/prediction/details
-/rt/locations/v2/predictions
-/rt/locations/v2/predictions
-/rt/locations/v2/predictions
-/rt/locations/v2/predictions
-/rt/locations/v2/search
-/rt/payment/payment_profiles/{id}/balance
 /rt/payment/payment_profiles/{id}/deposit_request
 /rt/inventory/shop_info?device_type=android
 /rt/utunes/providers/{provider_id}
