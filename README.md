@@ -14,7 +14,7 @@ https://cn.uber.com
 
 **GET:**
 
-| Path | Required Headers | Example Headers |
+| Path | Required Headers | Required Params |
 |------|------------------|------------------|
 | /rt/onboarding/dynamic-form/step/{driverUUID} | x-uber-token ||
 | /rt/onboarding/signup | x-uber-device-language ||
@@ -24,14 +24,14 @@ https://cn.uber.com
 | /rt/onboarding/dynamic-form/signup |||
 | /rt/onboarding/dynamic-form/upgrade |||
 | /rt/payment/payment_profiles/{id}/balance | x-uber-token ||
+| /rt/payment/v2/payment_profiles | x-uber-token ||
+| /rt/payment/payment_profiles/{id}/deposit_request | x-uber-token | amount |
+| /rt/payment/payment_profiles/{id}/get_backing_instruments |||
+| /rt/payment/paytm/payment_profiles/{payment_profile_uuid}/user-details |||
+| /rt/communications/messages/{threadId}/{fromSequenceNumber} | x-uber-token ||
+| /rt/communications/messages/trip/{tripId} | x-uber-token <br /> x-uber-uuid <br /> x-uber-client-name ||
 
 ```
-/rt/payment/v2/payment_profiles
-/rt/payment/payment_profiles/{id}/deposit_request
-/rt/payment/payment_profiles/{id}/get_backing_instruments
-/rt/payment/paytm/payment_profiles/{payment_profile_uuid}/user-details
-/rt/communications/messages/{threadId}/{fromSequenceNumber}
-/rt/communications/messages/trip/{tripId}
 /rt/communications/payload/{threadId}/{messageId}
 /rt/riders/{uuid}/credit-balance
 /rt/riders/{uuid}/unpaid-bills
