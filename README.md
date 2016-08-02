@@ -1,6 +1,8 @@
 # uber-mobile-rider-endpoints
 Unofficial Documentation of Uber Endpoints (Rider)
 
+Work in progress
+
 **Possible Hosts:**
 
 
@@ -12,9 +14,11 @@ https://cn.uber.com
 
 **GET:**
 
+| Path | Required Headers |
+|------|------------------|
+| /rt/onboarding/dynamic-form/step/{driverUUID} | x-uber-token |
+
 ```
-/rt/onboarding/dynamic-form/step/{driverUUID}
-/rt/onboarding/dynamic-form/step/{driverUUID}
 /rt/onboarding/signup
 /rt/drivers/{driverUUID}/vault
 /rt/onboarding/step/{partnerUuid}
