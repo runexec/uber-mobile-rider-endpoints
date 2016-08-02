@@ -30,14 +30,15 @@ https://cn.uber.com
 | /rt/payment/paytm/payment_profiles/{payment_profile_uuid}/user-details |||
 | /rt/communications/messages/{threadId}/{fromSequenceNumber} | x-uber-token ||
 | /rt/communications/messages/trip/{tripId} | x-uber-token <br /> x-uber-uuid <br /> x-uber-client-name ||
+| /rt/communications/payload/{threadId}/{messageId} | x-uber-token ||
+| /rt/riders/{uuid}/credit-balance | x-uber-token ||
+| /rt/riders/{uuid}/unpaid-bills  | x-uber-token ||
+| /rt/riders/auth-alipay |||
+| /rt/riders/sign-rsa || input |
+| /rt/fare/estimate || origin_lat <br /> origin_lng <br /> vehicle_view_ids <br /> destination_lat <br /> destination_lng |
 
 ```
-/rt/communications/payload/{threadId}/{messageId}
-/rt/riders/{uuid}/credit-balance
-/rt/riders/{uuid}/unpaid-bills
-/rt/riders/auth-alipay
-/rt/riders/sign-rsa
-/rt/fare/estimate
+
 /rt/invitations
 /rt/locations/locations
 /rt/locations/tag/locations
