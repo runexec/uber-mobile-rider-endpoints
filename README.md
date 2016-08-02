@@ -44,13 +44,12 @@ https://cn.uber.com
 | /rt/locations/v2/predictions |||
 | /rt/locations/v2/search |||
 | /rt/payment/payment_profiles/{id}/balance | x-uber-token ||
+| /rt/inventory/shop_info?device_type=android |||
+| /rt/utunes/providers/{provider_id} | x-uber-token ||
+| /rt/utunes/providers/{provider_id}/playlists/{playlist_id} | x-uber-token ||
+| /rt/utunes/providers/{provider_id}/search | x-uber-token | query |
 
 ```
-/rt/payment/payment_profiles/{id}/deposit_request
-/rt/inventory/shop_info?device_type=android
-/rt/utunes/providers/{provider_id}
-/rt/utunes/providers/{provider_id}/playlists/{playlist_id}
-/rt/utunes/providers/{provider_id}/search
 /rt/locations/pickups/geocode_region
 /rt/locations/pickups/snap
 /rt/locations/pickups/snap
