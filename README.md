@@ -20,13 +20,12 @@ https://cn.uber.com
 | /rt/onboarding/signup | x-uber-device-language ||
 | /rt/drivers/{driverUUID}/vault | x-uber-token ||
 | /rt/onboarding/step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token ||
+| /rt/onboarding/unified-step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token ||
+| /rt/onboarding/dynamic-form/signup |||
+| /rt/onboarding/dynamic-form/upgrade |||
+| /rt/payment/payment_profiles/{id}/balance | x-uber-token ||
 
 ```
-
-/rt/onboarding/unified-step/{partnerUuid}
-/rt/onboarding/dynamic-form/signup
-/rt/onboarding/dynamic-form/upgrade
-/rt/payment/payment_profiles/{id}/balance
 /rt/payment/v2/payment_profiles
 /rt/payment/payment_profiles/{id}/deposit_request
 /rt/payment/payment_profiles/{id}/get_backing_instruments
