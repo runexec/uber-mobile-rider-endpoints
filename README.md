@@ -71,11 +71,10 @@ https://cn.uber.com
 | /rt/loyalty/user/history | x-uber-token <br /> x-uber-uuid <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude||
 | /rt/users/rewards | x-uber-token | offset <br /> count <br /> type |
 | /rt/users/life/articles | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | category |
+| /rt/users/life/articles/categories | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude ||
+| /rt/users/life/articles/{itemUUID} | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | provider <br /> category |
 
 ```
-
-/rt/users/life/articles/categories
-/rt/users/life/articles/{itemUUID}
 /rt/admin/users/me/test_accounts
 /rt/cardoffer/offers
 /rt/riders/get-earned-rides
