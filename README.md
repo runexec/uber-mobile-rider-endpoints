@@ -93,15 +93,15 @@ https://cn.uber.com
 | /rt/saffron/campaigns |||
 | /rt/product/city/rider-view |||
 | /rt/referrals/campaign | x-uber-token ||
+| /rt/referrals/get-referral-info | x-uber-token ||
+| /rt/reminders/{reminderUuid} | x-uber-token | clientId |
+| /rt/reminders/upcoming-for-destination-dropdown | x-uber-token | userUuid |
+| /rt/reservation/fare-estimate | x-uber-token <br /> | originLat <br /> originLng <br /> destinationLat <br /> destinationLng <br /> vehicleViewId |
+| /rt/reservation/feasibility | | originLat <br /> originLng |
+| /rt/reservation/list | x-uber-token ||
+| /rt/riders/get-estimated-pre-trip-promotion || originLat <br /> originLng <br /> vehicleViewIds |
 
 ```
-/rt/referrals/get-referral-info
-/rt/reminders/{reminderUuid}
-/rt/reminders/upcoming-for-destination-dropdown
-/rt/reservation/fare-estimate
-/rt/reservation/feasibility
-/rt/reservation/list
-/rt/riders/get-estimated-pre-trip-promotion
 /rt/riders/inviter-give-get-description
 /rt/riders/me/dispatch-view
 /rt/riders/{riderUuid}/unpaid-bills
