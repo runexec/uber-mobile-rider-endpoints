@@ -60,17 +60,16 @@ https://cn.uber.com
 | /rt/payment/payment_profiles/{uuid}/deposit_request | x-uber-token | amount |
 | /rt/payment/payment-profiles/{uuid}/airtel-money/bonus-status |||
 | /rt/riders/baidu-wallet/connect | x-uber-token | pageUrl |
-
+| /rt/contacts/{contactUuid} | x-uber-token ||
+| /rt/contacts/user/{userUuid}/contacts | x-uber-token ||
+| /rt/contacts/v2/{contactUuid} | x-uber-token ||
+| /rt/support/custom-nodes/appease-bad-route/{tripId} | x-uber-token ||
+| /rt/support/custom-nodes/appease-rider-cancellation/{tripId} | x-uber-token ||
+| /rt/users/fapiao/trips | x-uber-token | tripType <br /> offset |
+| /rt/users/fapiao/user-defaults | x-uber-token ||
+| /rt/loyalty/user | x-uber-token <br /> x-uber-uuid <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | |
 ```
-/rt/contacts/{contactUuid}
-/rt/contacts/user/{userUuid}/contacts
-/rt/contacts/user/{userUuid}/contacts
-/rt/contacts/v2/{contactUuid}
-/rt/support/custom-nodes/appease-bad-route/{tripId}
-/rt/support/custom-nodes/appease-rider-cancellation/{tripId}
-/rt/users/fapiao/trips
-/rt/users/fapiao/user-defaults
-/rt/loyalty/user
+
 /rt/loyalty/user/history
 /rt/users/rewards
 /rt/users/life/articles
