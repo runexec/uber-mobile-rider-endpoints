@@ -68,11 +68,12 @@ https://cn.uber.com
 | /rt/users/fapiao/trips | x-uber-token | tripType <br /> offset |
 | /rt/users/fapiao/user-defaults | x-uber-token ||
 | /rt/loyalty/user | x-uber-token <br /> x-uber-uuid <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | |
+| /rt/loyalty/user/history | x-uber-token <br /> x-uber-uuid <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude||
+| /rt/users/rewards | x-uber-token | offset <br /> count <br /> type |
+| /rt/users/life/articles | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | category |
+
 ```
 
-/rt/loyalty/user/history
-/rt/users/rewards
-/rt/users/life/articles
 /rt/users/life/articles/categories
 /rt/users/life/articles/{itemUUID}
 /rt/admin/users/me/test_accounts
