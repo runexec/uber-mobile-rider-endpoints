@@ -200,8 +200,8 @@ https://cn.uber.com
 | POST | /rt/riders/{riderUuid}/commute-optin-state |||
 | POST | /rt/riders/{riderUuid}/enable-emergency |||
 | POST | /rt/riders/update-national-id |||
-| POST | /rt| POST | /rtnow/add-credentials |||
-| POST | /rt| POST | /rtnow/check-credentials |||
+| POST | /rt/rtnow/add-credentials |||
+| POST | /rt/rtnow/check-credentials |||
 | POST | /rt/safetynet/users/{userUuid}/create-contacts |||
 | POST | /rt/sharetrip/fetch |||
 | POST | /rt/support/contacts/appease-bad-route |||
@@ -237,6 +237,7 @@ https://cn.uber.com
 | POST | /rt/users/verify-password |||
 | POST | /rt/utunes/providers/{id}/start_trial |||
 | POST | /rt/utunes/rider/handshake |||
+
 
 
 **PUT:**
