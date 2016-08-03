@@ -11,107 +11,103 @@ https://cn-dc1.uber.com
 https://cn.uber.com
 ```
 
-
-**GET:**
-
-| Path | Required Headers | Required Params |
-|------|------------------|------------------|
-| /rt/onboarding/dynamic-form/step/{driverUUID} | x-uber-token ||
-| /rt/onboarding/signup | x-uber-device-language ||
-| /rt/drivers/{driverUUID}/vault | x-uber-token ||
-| /rt/onboarding/step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token ||
-| /rt/onboarding/unified-step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token ||
-| /rt/onboarding/dynamic-form/signup |||
-| /rt/onboarding/dynamic-form/upgrade |||
-| /rt/payment/payment_profiles/{id}/balance | x-uber-token ||
-| /rt/payment/v2/payment_profiles | x-uber-token ||
-| /rt/payment/payment_profiles/{id}/deposit_request | x-uber-token | amount |
-| /rt/payment/payment_profiles/{id}/get_backing_instruments |||
-| /rt/payment/paytm/payment_profiles/{payment_profile_uuid}/user-details |||
-| /rt/communications/messages/{threadId}/{fromSequenceNumber} | x-uber-token ||
-| /rt/communications/messages/trip/{tripId} | x-uber-token <br /> x-uber-uuid <br /> x-uber-client-name ||
-| /rt/communications/payload/{threadId}/{messageId} | x-uber-token ||
-| /rt/riders/{uuid}/credit-balance | x-uber-token ||
-| /rt/riders/{uuid}/unpaid-bills  | x-uber-token ||
-| /rt/riders/auth-alipay |||
-| /rt/riders/sign-rsa || input |
-| /rt/fare/estimate || origin_lat <br /> origin_lng <br /> vehicle_view_ids <br /> destination_lat <br /> destination_lng |
-| /rt/invitations  | x-uber-token ||
-| /rt/locations/locations |||
-| /rt/locations/tag/locations |||
-| /rt/locations/upfront |||
-| /rt/locations/v2/prediction/details |||
-| /rt/locations/v2/predictions |||
-| /rt/locations/v2/search |||
-| /rt/payment/payment_profiles/{id}/balance | x-uber-token ||
-| /rt/inventory/shop_info?device_type=android |||
-| /rt/utunes/providers/{provider_id} | x-uber-token ||
-| /rt/utunes/providers/{provider_id}/playlists/{playlist_id} | x-uber-token ||
-| /rt/utunes/providers/{provider_id}/search | x-uber-token | query |
-| /rt/locations/pickups/geocode_region |||
-| /rt/locations/pickups/snap |||
-| /rt/locations/pickups/venue |||
-| /rt/config/all-experiments | x-uber-token ||
-| /rt/config/experiments |||
-| /rt/riders/sign-rsa || input |
-| /rt/referrals/campaign | x-uber-token ||
-| /rt/referrals/get-referral-info | x-uber-token ||
-| /rt/payment/payment_profiles/{uuid}/balance | x-uber-token ||
-| /rt/payment/payment_profiles/{uuid}/deposit_request | x-uber-token | amount |
-| /rt/payment/payment-profiles/{uuid}/airtel-money/bonus-status |||
-| /rt/riders/baidu-wallet/connect | x-uber-token | pageUrl |
-| /rt/contacts/{contactUuid} | x-uber-token ||
-| /rt/contacts/user/{userUuid}/contacts | x-uber-token ||
-| /rt/contacts/v2/{contactUuid} | x-uber-token ||
-| /rt/support/custom-nodes/appease-bad-route/{tripId} | x-uber-token ||
-| /rt/support/custom-nodes/appease-rider-cancellation/{tripId} | x-uber-token ||
-| /rt/users/fapiao/trips | x-uber-token | tripType <br /> offset |
-| /rt/users/fapiao/user-defaults | x-uber-token ||
-| /rt/loyalty/user | x-uber-token <br /> x-uber-uuid <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | |
-| /rt/loyalty/user/history | x-uber-token <br /> x-uber-uuid <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude||
-| /rt/users/rewards | x-uber-token | offset <br /> count <br /> type |
-| /rt/users/life/articles | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | category |
-| /rt/users/life/articles/categories | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude ||
-| /rt/users/life/articles/{itemUUID} | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | provider <br /> category |
-| /rt/admin/users/me/test_accounts | x-uber-token | role |
-| /rt/cardoffer/offers | x-uber-token ||
-| /rt/riders/get-earned-rides | x-uber-token ||
-| /rt/cobrand/{clientId} | x-uber-token ||
-| /rt/contacts/{contactUuid} | x-uber-token ||
-| /rt/contacts/user/{userUuid}/contacts | x-uber-token || 
-| /rt/locations/pickups/dynamic |||
-| /rt/eats/v1/get-promotion-info |||
-| /rt/family/group/{groupUuid} |||
-| /rt/family/invites |||
-| /rt/geocoding/reverse | x-uber-token | latitude <br /> longitude <br /> language |
-| /rt/product/hop/{vvid}/nearbyRoutes | x-uber-token ||
-| /rt/locations/pickups/venue |||
-| /rt/locations/pool_ads |||
-| /rt/mobile/lookup-upgrade | x-uber-token | appName |
-| /rt/onboarding/partner-onboarding-app/pitch-info |||
-| /rt/onboarding/partner-onboarding-app/tutorial-info |||
-| /rt/saffron/campaigns |||
-| /rt/product/city/rider-view |||
-| /rt/referrals/campaign | x-uber-token ||
-| /rt/referrals/get-referral-info | x-uber-token ||
-| /rt/reminders/{reminderUuid} | x-uber-token | clientId |
-| /rt/reminders/upcoming-for-destination-dropdown | x-uber-token | userUuid |
-| /rt/reservation/fare-estimate | x-uber-token <br /> | originLat <br /> originLng <br /> destinationLat <br /> destinationLng <br /> vehicleViewId |
-| /rt/reservation/feasibility | | originLat <br /> originLng |
-| /rt/reservation/list | x-uber-token ||
-| /rt/riders/get-estimated-pre-trip-promotion || originLat <br /> originLng <br /> vehicleViewIds |
-| /rt/riders/inviter-give-get-description | x-uber-token ||
-| /rt/riders/me/dispatch-view | x-uber-token ||
-| /rt/riders/{riderUuid}/unpaid-bills | x-uber-token ||
-| /rt/riders/sign-rsa || input |
-| /rt/riders/unexpired-and-valid-promotions |||
-| /rt/safetynet/users/{userUuid}/contacts | x-uber-token ||
-| /rt/trips/{tripUuid}/cancellation-info |||
-| /rt/trips/{tripUuid}/contacts | x-uber-token ||
-| /rt/trips/{tripUuid}/route | x-uber-token ||
-| /rt/trips/{tripUuid}/share-yo-ride | x-uber-token ||
-| /rt/users/notification-settings | x-uber-token <br /> x-uber-uuid <br /> x-uber-device-language ||
-
+| Req | Path | Required Headers | Required Params |
+|-----|------|------------------|------------------|
+| GET | /rt/onboarding/dynamic-form/step/{driverUUID} | x-uber-token ||
+| GET | /rt/onboarding/signup | x-uber-device-language ||
+| GET | /rt/drivers/{driverUUID}/vault | x-uber-token ||
+| GET | /rt/onboarding/step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token ||
+| GET | /rt/onboarding/unified-step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token ||
+| GET | /rt/onboarding/dynamic-form/signup |||
+| GET | /rt/onboarding/dynamic-form/upgrade |||
+| GET | /rt/payment/payment_profiles/{id}/balance | x-uber-token ||
+| GET | /rt/payment/v2/payment_profiles | x-uber-token ||
+| GET | /rt/payment/payment_profiles/{id}/deposit_request | x-uber-token | amount |
+| GET | /rt/payment/payment_profiles/{id}/get_backing_instruments |||
+| GET | /rt/payment/paytm/payment_profiles/{payment_profile_uuid}/user-details |||
+| GET | /rt/communications/messages/{threadId}/{fromSequenceNumber} | x-uber-token ||
+| GET | /rt/communications/messages/trip/{tripId} | x-uber-token <br /> x-uber-uuid <br /> x-uber-client-name ||
+| GET | /rt/communications/payload/{threadId}/{messageId} | x-uber-token ||
+| GET | /rt/riders/{uuid}/credit-balance | x-uber-token ||
+| GET | /rt/riders/{uuid}/unpaid-bills  | x-uber-token ||
+| GET | /rt/riders/auth-alipay |||
+| GET | /rt/riders/sign-rsa || input |
+| GET | /rt/fare/estimate || origin_lat <br /> origin_lng <br /> vehicle_view_ids <br /> destination_lat <br /> destination_lng |
+| GET | /rt/invitations  | x-uber-token ||
+| GET | /rt/locations/locations |||
+| GET | /rt/locations/tag/locations |||
+| GET | /rt/locations/upfront |||
+| GET | /rt/locations/v2/prediction/details |||
+| GET | /rt/locations/v2/predictions |||
+| GET | /rt/locations/v2/search |||
+| GET | /rt/payment/payment_profiles/{id}/balance | x-uber-token ||
+| GET | /rt/inventory/shop_info?device_type=android |||
+| GET | /rt/utunes/providers/{provider_id} | x-uber-token ||
+| GET | /rt/utunes/providers/{provider_id}/playlists/{playlist_id} | x-uber-token ||
+| GET | /rt/utunes/providers/{provider_id}/search | x-uber-token | query |
+| GET | /rt/locations/pickups/geocode_region |||
+| GET | /rt/locations/pickups/snap |||
+| GET | /rt/locations/pickups/venue |||
+| GET | /rt/config/all-experiments | x-uber-token ||
+| GET | /rt/config/experiments |||
+| GET | /rt/riders/sign-rsa || input |
+| GET | /rt/referrals/campaign | x-uber-token ||
+| GET | /rt/referrals/get-referral-info | x-uber-token ||
+| GET | /rt/payment/payment_profiles/{uuid}/balance | x-uber-token ||
+| GET | /rt/payment/payment_profiles/{uuid}/deposit_request | x-uber-token | amount |
+| GET | /rt/payment/payment-profiles/{uuid}/airtel-money/bonus-status |||
+| GET | /rt/riders/baidu-wallet/connect | x-uber-token | pageUrl |
+| GET | /rt/contacts/{contactUuid} | x-uber-token ||
+| GET | /rt/contacts/user/{userUuid}/contacts | x-uber-token ||
+| GET | /rt/contacts/v2/{contactUuid} | x-uber-token ||
+| GET | /rt/support/custom-nodes/appease-bad-route/{tripId} | x-uber-token ||
+| GET | /rt/support/custom-nodes/appease-rider-cancellation/{tripId} | x-uber-token ||
+| GET | /rt/users/fapiao/trips | x-uber-token | tripType <br /> offset |
+| GET | /rt/users/fapiao/user-defaults | x-uber-token ||
+| GET | /rt/loyalty/user | x-uber-token <br /> x-uber-uuid <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | |
+| GET | /rt/loyalty/user/history | x-uber-token <br /> x-uber-uuid <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude||
+| GET | /rt/users/rewards | x-uber-token | offset <br /> count <br /> type |
+| GET | /rt/users/life/articles | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | category |
+| GET | /rt/users/life/articles/categories | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude ||
+| GET | /rt/users/life/articles/{itemUUID} | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | provider <br /> category |
+| GET | /rt/admin/users/me/test_accounts | x-uber-token | role |
+| GET | /rt/cardoffer/offers | x-uber-token ||
+| GET | /rt/riders/get-earned-rides | x-uber-token ||
+| GET | /rt/cobrand/{clientId} | x-uber-token ||
+| GET | /rt/contacts/{contactUuid} | x-uber-token ||
+| GET | /rt/contacts/user/{userUuid}/contacts | x-uber-token || 
+| GET | /rt/locations/pickups/dynamic |||
+| GET | /rt/eats/v1/get-promotion-info |||
+| GET | /rt/family/group/{groupUuid} |||
+| GET | /rt/family/invites |||
+| GET | /rt/geocoding/reverse | x-uber-token | latitude <br /> longitude <br /> language |
+| GET | /rt/product/hop/{vvid}/nearbyRoutes | x-uber-token ||
+| GET | /rt/locations/pickups/venue |||
+| GET | /rt/locations/pool_ads |||
+| GET | /rt/mobile/lookup-upgrade | x-uber-token | appName |
+| GET | /rt/onboarding/partner-onboarding-app/pitch-info |||
+| GET | /rt/onboarding/partner-onboarding-app/tutorial-info |||
+| GET | /rt/saffron/campaigns |||
+| GET | /rt/product/city/rider-view |||
+| GET | /rt/referrals/campaign | x-uber-token ||
+| GET | /rt/referrals/get-referral-info | x-uber-token ||
+| GET | /rt/reminders/{reminderUuid} | x-uber-token | clientId |
+| GET | /rt/reminders/upcoming-for-destination-dropdown | x-uber-token | userUuid |
+| GET | /rt/reservation/fare-estimate | x-uber-token <br /> | originLat <br /> originLng <br /> destinationLat <br /> destinationLng <br /> vehicleViewId |
+| GET | /rt/reservation/feasibility | | originLat <br /> originLng |
+| GET | /rt/reservation/list | x-uber-token ||
+| GET | /rt/riders/get-estimated-pre-trip-promotion || originLat <br /> originLng <br /> vehicleViewIds |
+| GET | /rt/riders/inviter-give-get-description | x-uber-token ||
+| GET | /rt/riders/me/dispatch-view | x-uber-token ||
+| GET | /rt/riders/{riderUuid}/unpaid-bills | x-uber-token ||
+| GET | /rt/riders/sign-rsa || input |
+| GET | /rt/riders/unexpired-and-valid-promotions |||
+| GET | /rt/safetynet/users/{userUuid}/contacts | x-uber-token ||
+| GET | /rt/trips/{tripUuid}/cancellation-info |||
+| GET | /rt/trips/{tripUuid}/contacts | x-uber-token ||
+| GET | /rt/trips/{tripUuid}/route | x-uber-token ||
+| GET | /rt/trips/{tripUuid}/share-yo-ride | x-uber-token ||
+| GET | /rt/users/notification-settings | x-uber-token <br /> x-uber-uuid <br /> x-uber-device-language ||
 
 **POST:**
 
