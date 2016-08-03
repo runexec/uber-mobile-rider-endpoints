@@ -48,17 +48,15 @@ https://cn.uber.com
 | /rt/utunes/providers/{provider_id} | x-uber-token ||
 | /rt/utunes/providers/{provider_id}/playlists/{playlist_id} | x-uber-token ||
 | /rt/utunes/providers/{provider_id}/search | x-uber-token | query |
+| /rt/locations/pickups/geocode_region |||
+| /rt/locations/pickups/snap |||
+| /rt/locations/pickups/venue |||
+| /rt/config/all-experiments | x-uber-token ||
+| /rt/config/experiments |||
+| /rt/riders/sign-rsa || input |
+| /rt/referrals/campaign | x-uber-token ||
 
 ```
-/rt/locations/pickups/geocode_region
-/rt/locations/pickups/snap
-/rt/locations/pickups/snap
-/rt/locations/pickups/venue
-/rt/locations/pickups/venue
-/rt/config/all-experiments
-/rt/config/experiments
-/rt/riders/sign-rsa
-/rt/referrals/campaign
 /rt/referrals/get-referral-info
 /rt/payment/payment_profiles/{uuid}/balance
 /rt/payment/payment_profiles/{uuid}/deposit_request
