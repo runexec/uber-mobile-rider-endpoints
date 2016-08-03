@@ -108,153 +108,136 @@ https://cn.uber.com
 | GET | /rt/trips/{tripUuid}/route | x-uber-token ||
 | GET | /rt/trips/{tripUuid}/share-yo-ride | x-uber-token ||
 | GET | /rt/users/notification-settings | x-uber-token <br /> x-uber-uuid <br /> x-uber-device-language ||
+| POST | /rt/apps/bootstrap-rider |||
+| POST | /rt/business/redeem-employee-invite |||
+| POST | /rt/chat/v2/new-session |||
+| POST | /rt/client-promotions |||
+| POST | /rt/communications/message |||
+| POST | /rt/companies/get-company-brand |||
+| POST | /rt/contacts/{contactUuid} |||
+| POST | /rt/contacts/{contactUuid}/message |||
+| POST | /rt/contacts/v2/{contactUuid} |||
+| POST | /rt/drivers/{driverUuid}/send-ramen-message |||
+| POST | /rt/drivers/v2/{driverUUID}/vault |||
+| POST | /rt/expensecodes/get-expense-codes-for-user |||
+| POST | /rt/expensecodes/get-expense-codes-metadata-for-user |||
+| POST | /rt/family/bootstrap/settings |||
+| POST | /rt/family/group/{groupUuid} |||
+| POST | /rt/family/group/{groupUuid}/jobs |||
+| POST | /rt/family/group/{groupUuid}/paymentProfiles |||
+| POST | /rt/family/invite/redeem |||
+| POST | /rt/fare/eats_estimate |||
+| POST | /rt/feedback |||
+| POST | /rt/feedback/personal_transport |||
+| POST | /rt/feedback/search-dynamic-tags |||
+| POST | /rt/inventory/reminder |||
+| POST | /rt/invitations |||
+| POST | /rt/invitations/{driverUUID}/nominees |||
+| POST | /rt/invitations/{userUuid}/contacts |||
+| POST | /rt/invitations/{userUuid}/invites-log |||
+| POST | /rt/invitations/{userUuid}/nominees |||
+| POST | /rt/mobile/task/create |||
+| POST | /rt/mobile/task/teams |||
+| POST | /rt/mobrec/is-eligible |||
+| POST | /rt/mobrec/is-trip-eligible |||
+| POST | /rt/mobrec/send-email |||
+| POST | /rt/mobrec/update-challenge-status |||
+| POST | /rt/navigation/v2/route |||
+| POST | /rt/notifier/device-tokens |||
+| POST | /rt/offers/activate-offers |||
+| POST | /rt/offers/enroll-user |||
+| POST | /rt/offers/get-user-offers |||
+| POST | /rt/offers/unenroll-user |||
+| POST | /rt/onboarding/documents |||
+| POST | /rt/onboarding/dynamic-form/signup |||
+| POST | /rt/onboarding/dynamic-form/upgrade |||
+| POST | /rt/onboarding/dynamic-form/verify-phone |||
+| POST | /rt/onboarding/send_comms |||
+| POST | /rt/onboarding/step/{partnerUuid} |||
+| POST | /rt/onboarding/unified-step/{partnerUuid} |||
+| POST | /rt/onboarding/vehicle-inspection/email/{driverUUID} |||
+| POST | /rt/payment/payment_profiles/ |||
+| POST | /rt/payment/payment_profiles/{id}/validation_code/send |||
+| POST | /rt/payment/payment-profiles/{uuid}/airtel-money/deposit |||
+| POST | /rt/payment/payment_profiles/{uuid}/reward |||
+| POST | /rt/payment/payment_profiles/{uuid}/reward |||
+| POST | /rt/payment/payment_profiles/{uuid}/validation_code/send |||
+| POST | /rt/payment/payment_profiles/{uuid}/validation_code/validate |||
+| POST | /rt/payment/payment_profiles/{uuid}/validation_code/validate |||
+| POST | /rt/payment/providers/airtel-money/account |||
+| POST | /rt/payment/providers/airtel-money/account/link |||
+| POST | /rt/payment/providers/airtel-money/validation-code/send |||
+| POST | /rt/payment/providers/airtel-money/validation-code/validate |||
+| POST | /rt/payment/v2/payment_profiles |||
+| POST | /rt/profiles/delete-profile |||
+| POST | /rt/profiles/get-profiles |||
+| POST | /rt/profiles/get-profile-theme-options |||
+| POST | /rt/profiles/onboard-user |||
+| POST | /rt/profiles/patch-profile |||
+| POST | /rt/profiles/request-verification |||
+| POST | /rt/profiles/update-profile |||
+| POST | /rt/questions/get-employee-feedback |||
+| POST | /rt/questions/record-employee-feedback |||
+| POST | /rt/referrals/bulk-invitation |||
+| POST | /rt/referrals/create-directed-referral-code-links |||
+| POST | /rt/referrals/create-indirect-invite |||
+| POST | /rt/referrals/create-referral-code-links |||
+| POST | /rt/reservation/{reservationUuid} |||
+| POST | /rt/riders/create-promotion-redemption-override |||
+| POST | /rt/riders/me/accept-fare-split |||
+| POST | /rt/riders/me/add-expense-info |||
+| POST | /rt/riders/me/client-status |||
+| POST | /rt/riders/me/decline-fare-split |||
+| POST | /rt/riders/me/fare-estimate |||
+| POST | /rt/riders/me/invite-fare-split |||
+| POST | /rt/riders/me/pickup |||
+| POST | /rt/riders/me/schedule-surge-drop |||
+| POST | /rt/riders/me/select-payment-profile |||
+| POST | /rt/riders/me/select-profile |||
+| POST | /rt/riders/me/set-use-credits |||
+| POST | /rt/riders/me/status |||
+| POST | /rt/riders/me/uninvite-fare-split |||
+| POST | /rt/riders/{riderUuid}/commute-optin-state |||
+| POST | /rt/riders/{riderUuid}/enable-emergency |||
+| POST | /rt/riders/update-national-id |||
+| POST | /rt| POST | /rtnow/add-credentials |||
+| POST | /rt| POST | /rtnow/check-credentials |||
+| POST | /rt/safetynet/users/{userUuid}/create-contacts |||
+| POST | /rt/sharetrip/fetch |||
+| POST | /rt/support/contacts/appease-bad-route |||
+| POST | /rt/support/contacts/appease-rider-cancellation |||
+| POST | /rt/support/nodes/{nodeId}/csat |||
+| POST | /rt/surge/input |||
+| POST | /rt/trips/{trip_id}/anonymous-number |||
+| POST | /rt/trips/{trip_id}/inbound-call |||
+| POST | /rt/trips/{tripUuid}/anonymous-on-demand |||
+| POST | /rt/trips/{tripUuid}/rider-cancel |||
+| POST | /rt/trips/{tripUuid}/rider-rate |||
+| POST | /rt/trips/{tripUuid}/rider-set-info |||
+| POST | /rt/trips/{tripUuid}/share-with-contacts |||
+| POST | /rt/users/apply-clients-promotions |||
+| POST | /rt/users/authenticate-third-party |||
+| POST | /rt/users/confirm-mobile |||
+| POST | /rt/users/fapiao/request |||
+| POST | /rt/users/login |||
+| POST | /rt/users/login |||
+| POST | /rt/users/passwordless-signup |||
+| POST | /rt/users/passwordless-signup/add-password |||
+| POST | /rt/users/picture |||
+| POST | /rt/users/request-mobile-confirmation |||
+| POST | /rt/users/request-sms-verification |||
+| POST | /rt/users/reset-password |||
+| POST | /rt/users/rewards/{itemUUID}/action |||
+| POST | /rt/users/tag-user-public |||
+| POST | /rt/users/third-party-identities |||
+| POST | /rt/users/two-factor-auth |||
+| POST | /rt/users/v2/request-mobile-confirmation |||
+| POST | /rt/users/v2/verify-password |||
+| POST | /rt/users/validate-promotion |||
+| POST | /rt/users/verify-password |||
+| POST | /rt/utunes/providers/{id}/start_trial |||
+| POST | /rt/utunes/rider/handshake |||
 
-**POST:**
-
-```
-/rt/onboarding/documents
-/rt/onboarding/dynamic-form/v2/step/{driverUUID}
-/rt/onboarding/dynamic-form/v2/step/{driverUUID}
-/rt/onboarding/vehicle-inspection/email/{driverUUID}
-/rt/onboarding/dynamic-form/verify-phone
-/rt/users/login
-/rt/users/request-sms-verification
-/rt/drivers/v2/{driverUUID}/vault
-/rt/onboarding/send_comms
-/rt/onboarding/step/{partnerUuid}
-/rt/onboarding/unified-step/{partnerUuid}
-/rt/onboarding/dynamic-form/signup
-/rt/onboarding/dynamic-form/upgrade
-/rt/payment/payment_profiles/{uuid}/reward
-/rt/payment/payment_profiles/{uuid}/validation_code/validate
-/rt/payment/v2/payment_profiles
-/rt/payment/v2/payment_profiles
-/rt/communications/message
-/rt/users/request-mobile-confirmation
-/rt/users/verify-password
-/rt/users/passwordless-signup/add-password
-/rt/invitations
-/rt/users/passwordless-signup
-/rt/users/reset-password
-/rt/payment/payment_profiles/{id}/validation_code/send
-/rt/payment/payment_profiles/{id}/validation_code/validate
-/rt/payment/payment_profiles/{id}/validation_code/validate
-/rt/trips/{trip_id}/anonymous-number
-/rt/trips/{trip_id}/inbound-call
-/rt/fare/eats_estimate
-/rt/fare/eats_estimate
-/rt/feedback
-/rt/inventory/reminder
-/rt/utunes/providers/{id}/start_trial
-/rt/utunes/rider/handshake
-/rt/users/two-factor-auth
-/rt/rtnow/add-credentials
-/rt/rtnow/check-credentials
-/rt/chat/v2/new-session
-/rt/invitations/{driverUUID}/contacts
-/rt/invitations/{driverUUID}/contacts
-/rt/invitations/{driverUUID}/nominees
-/rt/referrals/bulk-invitation
-/rt/referrals/create-directed-referral-code-links
-/rt/referrals/create-indirect-invite
-/rt/referrals/create-referral-code-links
-/rt/client-promotions
-/rt/payment/payment_profiles/
-/rt/payment/payment_profiles/{uuid}/validation_code/send
-/rt/payment/payment_profiles/{uuid}/validation_code/validate
-/rt/payment/payment-profiles/{uuid}/airtel-money/deposit
-/rt/payment/providers/airtel-money/account
-/rt/payment/providers/airtel-money/account/link
-/rt/payment/providers/airtel-money/validation-code/send
-/rt/payment/providers/airtel-money/validation-code/validate
-/rt/payment/payment_profiles/
-/rt/payment/payment_profiles/
-/rt/payment/payment_profiles/
-/rt/contacts/{contactUuid}
-/rt/contacts/v2/{contactUuid}
-/rt/questions/get-employee-feedback
-/rt/questions/record-employee-feedback
-/rt/support/contacts/appease-bad-route
-/rt/support/contacts/appease-rider-cancellation
-/rt/support/nodes/{nodeId}/csat
-/rt/users/fapiao/request
-/rt/mobile/task/create
-/rt/mobile/task/teams
-/rt/users/rewards/{itemUUID}/action
-/rt/apps/bootstrap-rider
-/rt/business/redeem-employee-invite
-/rt/riders/create-promotion-redemption-override
-/rt/mobrec/is-eligible
-/rt/mobrec/is-trip-eligible
-/rt/mobrec/send-email
-/rt/mobrec/update-challenge-status
-/rt/riders/{riderUuid}/commute-optin-state
-/rt/companies/get-company-brand
-/rt/contacts/{contactUuid}/message
-/rt/drivers/{driverUuid}/send-ramen-message
-/rt/expensecodes/get-expense-codes-for-user
-/rt/expensecodes/get-expense-codes-metadata-for-user
-/rt/family/bootstrap/settings
-/rt/family/group/{groupUuid}
-/rt/family/group/{groupUuid}/jobs
-/rt/family/group/{groupUuid}/paymentProfiles
-/rt/family/invite/redeem
-/rt/fare/eats_estimate
-/rt/feedback/personal_transport
-/rt/feedback/search-dynamic-tags
-/rt/invitations/{userUuid}/contacts
-/rt/invitations/{userUuid}/invites-log
-/rt/invitations/{userUuid}/nominees
-/rt/navigation/v2/route
-/rt/notifier/device-tokens
-/rt/payment/payment_profiles/{uuid}/reward
-/rt/payment/v2/payment_profiles
-/rt/profiles/delete-profile
-/rt/profiles/get-profiles
-/rt/profiles/get-profile-theme-options
-/rt/profiles/onboard-user
-/rt/profiles/patch-profile
-/rt/profiles/request-verification
-/rt/profiles/update-profile
-/rt/reservation/{reservationUuid}
-/rt/offers/activate-offers
-/rt/offers/enroll-user
-/rt/offers/get-user-offers
-/rt/offers/unenroll-user
-/rt/riders/me/accept-fare-split
-/rt/riders/me/add-expense-info
-/rt/riders/me/client-status
-/rt/riders/me/decline-fare-split
-/rt/riders/me/fare-estimate
-/rt/riders/me/invite-fare-split
-/rt/riders/me/pickup
-/rt/riders/me/schedule-surge-drop
-/rt/riders/me/select-payment-profile
-/rt/riders/me/select-profile
-/rt/riders/me/set-use-credits
-/rt/riders/me/status
-/rt/riders/me/uninvite-fare-split
-/rt/riders/{riderUuid}/enable-emergency
-/rt/riders/update-national-id
-/rt/safetynet/users/{userUuid}/create-contacts
-/rt/surge/input
-/rt/trips/{tripUuid}/anonymous-on-demand
-/rt/trips/{tripUuid}/rider-cancel
-/rt/trips/{tripUuid}/rider-rate
-/rt/trips/{tripUuid}/rider-set-info
-/rt/trips/{tripUuid}/share-with-contacts
-/rt/sharetrip/fetch
-/rt/users/apply-clients-promotions
-/rt/users/authenticate-third-party
-/rt/users/confirm-mobile
-/rt/users/login
-/rt/users/picture
-/rt/users/tag-user-public
-/rt/users/third-party-identities
-/rt/users/v2/request-mobile-confirmation
-/rt/users/v2/verify-password
-/rt/users/validate-promotion
-```
 
 **PUT:**
 
