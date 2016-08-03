@@ -108,16 +108,16 @@ https://cn.uber.com
 | GET | /rt/trips/{tripUuid}/route | x-uber-token ||
 | GET | /rt/trips/{tripUuid}/share-yo-ride | x-uber-token ||
 | GET | /rt/users/notification-settings | x-uber-token <br /> x-uber-uuid <br /> x-uber-device-language ||
-| POST | /rt/apps/bootstrap-rider |||
-| POST | /rt/business/redeem-employee-invite |||
-| POST | /rt/chat/v2/new-session |||
+| POST | /rt/apps/bootstrap-rider | x-uber-token ||
+| POST | /rt/business/redeem-employee-invite || request |
+| POST | /rt/chat/v2/new-session | x-uber-token ||
 | POST | /rt/client-promotions |||
-| POST | /rt/communications/message |||
-| POST | /rt/companies/get-company-brand |||
-| POST | /rt/contacts/{contactUuid} |||
+| POST | /rt/communications/message | x-uber-token | senderId <br /> messageType <br /> clientMesssageId <br /> payload |
+| POST | /rt/companies/get-company-brand | x-uber-token | request |
+| POST | /rt/contacts/{contactUuid} | x-uber-token | requesterId |
 | POST | /rt/contacts/{contactUuid}/message |||
-| POST | /rt/contacts/v2/{contactUuid} |||
-| POST | /rt/drivers/{driverUuid}/send-ramen-message |||
+| POST | /rt/contacts/v2/{contactUuid} || contactId <br /> requesterId |
+| POST | /rt/drivers/{driverUuid}/send-ramen-message | x-uber-token | msg <br /> msgType |
 | POST | /rt/drivers/v2/{driverUUID}/vault |||
 | POST | /rt/expensecodes/get-expense-codes-for-user |||
 | POST | /rt/expensecodes/get-expense-codes-metadata-for-user |||
