@@ -79,24 +79,22 @@ https://cn.uber.com
 | /rt/cobrand/{clientId} | x-uber-token ||
 | /rt/contacts/{contactUuid} | x-uber-token ||
 | /rt/contacts/user/{userUuid}/contacts | x-uber-token || 
+| /rt/locations/pickups/dynamic |||
+| /rt/eats/v1/get-promotion-info |||
+| /rt/family/group/{groupUuid} |||
+| /rt/family/invites |||
+| /rt/geocoding/reverse | x-uber-token | latitude <br /> longitude <br /> language |
+| /rt/product/hop/{vvid}/nearbyRoutes | x-uber-token ||
+| /rt/locations/pickups/venue |||
+| /rt/locations/pool_ads |||
+| /rt/mobile/lookup-upgrade | x-uber-token | appName |
+| /rt/onboarding/partner-onboarding-app/pitch-info |||
+| /rt/onboarding/partner-onboarding-app/tutorial-info |||
+| /rt/saffron/campaigns |||
+| /rt/product/city/rider-view |||
+| /rt/referrals/campaign | x-uber-token ||
 
 ```
-
-/rt/locations/pickups/dynamic
-/rt/locations/pickups/dynamic
-/rt/eats/v1/get-promotion-info
-/rt/family/group/{groupUuid}
-/rt/family/invites
-/rt/geocoding/reverse
-/rt/product/hop/{vvid}/nearbyRoutes
-/rt/locations/pickups/venue
-/rt/locations/pool_ads
-/rt/mobile/lookup-upgrade
-/rt/onboarding/partner-onboarding-app/pitch-info
-/rt/onboarding/partner-onboarding-app/tutorial-info
-/rt/saffron/campaigns
-/rt/product/city/rider-view
-/rt/referrals/campaign
 /rt/referrals/get-referral-info
 /rt/reminders/{reminderUuid}
 /rt/reminders/upcoming-for-destination-dropdown
