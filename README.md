@@ -55,13 +55,13 @@ https://cn.uber.com
 | /rt/config/experiments |||
 | /rt/riders/sign-rsa || input |
 | /rt/referrals/campaign | x-uber-token ||
+| /rt/referrals/get-referral-info | x-uber-token ||
+| /rt/payment/payment_profiles/{uuid}/balance | x-uber-token ||
+| /rt/payment/payment_profiles/{uuid}/deposit_request | x-uber-token | amount |
+| /rt/payment/payment-profiles/{uuid}/airtel-money/bonus-status |||
+| /rt/riders/baidu-wallet/connect | x-uber-token | pageUrl |
 
 ```
-/rt/referrals/get-referral-info
-/rt/payment/payment_profiles/{uuid}/balance
-/rt/payment/payment_profiles/{uuid}/deposit_request
-/rt/payment/payment-profiles/{uuid}/airtel-money/bonus-status
-/rt/riders/baidu-wallet/connect
 /rt/contacts/{contactUuid}
 /rt/contacts/user/{userUuid}/contacts
 /rt/contacts/user/{userUuid}/contacts
