@@ -73,14 +73,15 @@ https://cn.uber.com
 | /rt/users/life/articles | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | category |
 | /rt/users/life/articles/categories | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude ||
 | /rt/users/life/articles/{itemUUID} | x-uber-uuid <br /> x-uber-token <br /> x-uber-device <br /> x-uber-device-language <br /> x-uber-client-name <br /> x-uber-client-version <br /> x-uber-device-location-latitude <br /> x-uber-device-location-longitude | provider <br /> category |
+| /rt/admin/users/me/test_accounts | x-uber-token | role |
+| /rt/cardoffer/offers | x-uber-token ||
+| /rt/riders/get-earned-rides | x-uber-token ||
+| /rt/cobrand/{clientId} | x-uber-token ||
+| /rt/contacts/{contactUuid} | x-uber-token ||
+| /rt/contacts/user/{userUuid}/contacts | x-uber-token || 
 
 ```
-/rt/admin/users/me/test_accounts
-/rt/cardoffer/offers
-/rt/riders/get-earned-rides
-/rt/cobrand/{clientId}
-/rt/contacts/{contactUuid}
-/rt/contacts/user/{userUuid}/contacts
+
 /rt/locations/pickups/dynamic
 /rt/locations/pickups/dynamic
 /rt/eats/v1/get-promotion-info
