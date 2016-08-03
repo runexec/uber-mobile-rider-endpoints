@@ -100,20 +100,18 @@ https://cn.uber.com
 | /rt/reservation/feasibility | | originLat <br /> originLng |
 | /rt/reservation/list | x-uber-token ||
 | /rt/riders/get-estimated-pre-trip-promotion || originLat <br /> originLng <br /> vehicleViewIds |
+| /rt/riders/inviter-give-get-description | x-uber-token ||
+| /rt/riders/me/dispatch-view | x-uber-token ||
+| /rt/riders/{riderUuid}/unpaid-bills | x-uber-token ||
+| /rt/riders/sign-rsa || input |
+| /rt/riders/unexpired-and-valid-promotions |||
+| /rt/safetynet/users/{userUuid}/contacts | x-uber-token ||
+| /rt/trips/{tripUuid}/cancellation-info |||
+| /rt/trips/{tripUuid}/contacts | x-uber-token ||
+| /rt/trips/{tripUuid}/route | x-uber-token ||
+| /rt/trips/{tripUuid}/share-yo-ride | x-uber-token ||
+| /rt/users/notification-settings | x-uber-token <br /> x-uber-uuid <br /> x-uber-device-language ||
 
-```
-/rt/riders/inviter-give-get-description
-/rt/riders/me/dispatch-view
-/rt/riders/{riderUuid}/unpaid-bills
-/rt/riders/sign-rsa
-/rt/riders/unexpired-and-valid-promotions
-/rt/safetynet/users/{userUuid}/contacts
-/rt/trips/{tripUuid}/cancellation-info
-/rt/trips/{tripUuid}/contacts
-/rt/trips/{tripUuid}/route
-/rt/trips/{tripUuid}/share-yo-ride
-/rt/users/notification-settings
-```
 
 **POST:**
 
