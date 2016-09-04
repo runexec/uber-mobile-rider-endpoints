@@ -118,14 +118,14 @@ https://cn.uber.com
 | POST | /rt/contacts/{contactUuid}/message |||
 | POST | /rt/contacts/v2/{contactUuid} || contactId <br /> requesterId |
 | POST | /rt/drivers/{driverUuid}/send-ramen-message | x-uber-token | msg <br /> msgType |
-| POST | /rt/drivers/v2/{driverUUID}/vault |||
-| POST | /rt/expensecodes/get-expense-codes-for-user |||
-| POST | /rt/expensecodes/get-expense-codes-metadata-for-user |||
-| POST | /rt/family/bootstrap/settings |||
-| POST | /rt/family/group/{groupUuid} |||
-| POST | /rt/family/group/{groupUuid}/jobs |||
-| POST | /rt/family/group/{groupUuid}/paymentProfiles |||
-| POST | /rt/family/invite/redeem |||
+| POST | /rt/drivers/v2/{driverUUID}/vault | x-uber-token | vault <br /> infoType|
+| POST | /rt/expensecodes/get-expense-codes-for-user | x-uber-token | request |
+| POST | /rt/expensecodes/get-expense-codes-metadata-for-user | x-uber-token | request |
+| POST | /rt/family/bootstrap/settings || body.request |
+| POST | /rt/family/group/{groupUuid} | x-uber-token ||
+| POST | /rt/family/group/{groupUuid}/jobs | x-uber-token | jobUUID <br /> dc|
+| POST | /rt/family/group/{groupUuid}/paymentProfiles | x-uber-token | cardNumber <br /> cardCode <br /> cardExpirationMonth <br /> cardExpirationYear <br /> billingZip <br /> paymentProfileUUID |
+| POST | /rt/family/invite/redeem | x-uber-token | request |
 | POST | /rt/fare/eats_estimate |||
 | POST | /rt/feedback |||
 | POST | /rt/feedback/personal_transport |||
