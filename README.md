@@ -126,23 +126,23 @@ https://cn.uber.com
 | POST | /rt/family/group/{groupUuid}/jobs | x-uber-token | jobUUID <br /> dc|
 | POST | /rt/family/group/{groupUuid}/paymentProfiles | x-uber-token | cardNumber <br /> cardCode <br /> cardExpirationMonth <br /> cardExpirationYear <br /> billingZip <br /> paymentProfileUUID |
 | POST | /rt/family/invite/redeem | x-uber-token | request |
-| POST | /rt/fare/eats_estimate |||
-| POST | /rt/feedback |||
-| POST | /rt/feedback/personal_transport |||
-| POST | /rt/feedback/search-dynamic-tags |||
-| POST | /rt/inventory/reminder |||
-| POST | /rt/invitations |||
-| POST | /rt/invitations/{driverUUID}/nominees |||
-| POST | /rt/invitations/{userUuid}/contacts |||
-| POST | /rt/invitations/{userUuid}/invites-log |||
-| POST | /rt/invitations/{userUuid}/nominees |||
-| POST | /rt/mobile/task/create |||
-| POST | /rt/mobile/task/teams |||
-| POST | /rt/mobrec/is-eligible |||
-| POST | /rt/mobrec/is-trip-eligible |||
-| POST | /rt/mobrec/send-email |||
-| POST | /rt/mobrec/update-challenge-status |||
-| POST | /rt/navigation/v2/route |||
+| POST | /rt/fare/eats_estimate | x-uber-token | items <br /> vehicleViewId <br /> items <br /> vehicle_view_id|
+| POST | /rt/feedback | x-uber-token | feedback |
+| POST | /rt/feedback/personal_transport | x-uber-token | feedback |
+| POST | /rt/feedback/search-dynamic-tags | x-uber-token | options |
+| POST | /rt/inventory/reminder | x-uber-token | itemId <br /> timestamp |
+| POST | /rt/invitations | x-uber-token | invitees |
+| POST | /rt/invitations/{driverUUID}/nominees | x-uber-token ||
+| POST | /rt/invitations/{userUuid}/contacts | x-uber-token ||
+| POST | /rt/invitations/{userUuid}/invites-log | x-uber-token ||
+| POST | /rt/invitations/{userUuid}/nominees | x-uber-token ||
+| POST | /rt/mobile/task/create | x-uber-token | task |
+| POST | /rt/mobile/task/teams | x-uber-token | clientIdentifier |
+| POST | /rt/mobrec/is-eligible | x-uber-token ||
+| POST | /rt/mobrec/is-trip-eligible | x-uber-token | jobUUID |
+| POST | /rt/mobrec/send-email | x-uber-token | challengeId <br /> status |
+| POST | /rt/mobrec/update-challenge-status | x-uber-token | challengeId <br /> status |
+| POST | /rt/navigation/v2/route | x-uber-token | origin <br /> destination |
 | POST | /rt/notifier/device-tokens |||
 | POST | /rt/offers/activate-offers |||
 | POST | /rt/offers/enroll-user |||
