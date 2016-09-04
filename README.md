@@ -231,11 +231,21 @@ https://cn.uber.com
 | POST | /rt/users/v2/request-mobile-confirmation |x-uber-token||
 | POST | /rt/users/v2/verify-password |x-uber-token|password|
 | POST | /rt/users/validate-promotion ||promotionCode <br /> confirmed|
-| POST | /rt/users/verify-password |x-uber-token|| password <br /> app <br /> device |
+| POST | /rt/users/verify-password |x-uber-token | password <br /> app <br /> device |
 | POST | /rt/utunes/providers/{id}/start_trial |x-uber-token|trial|
 | POST | /rt/utunes/rider/handshake |x-uber-token|provider_id <br />trip_uuid<br />access_token|
-
-
+| DELETE | /rt/payment/payment_profiles/{uuid}/ | x-uber-token ||
+| DELETE | /rt/locations/tag/locations/{tag} | x-uber-token ||
+| DELETE | /rt/inventory/reminder/{uuid} |||
+| DELETE | /rt/invitations/{driverUUID}/contacts |||
+| DELETE | /rt/payment/payment_profiles/{uuid}/ | x-uber-token ||
+| DELETE | /rt/family/group/{groupUuid} | x-uber-token ||
+| DELETE | /rt/family/group/{groupUuid}/members/{memberUuid} |||
+| DELETE | /rt/invitations/{userUuid}/contacts |||
+| DELETE | /rt/notifier/device-tokens/{deviceToken} |||
+| DELETE | /rt/payment/v2/payment_profiles/{uuid} |||
+| DELETE | /rt/reservation/{reservationUuid} | x-uber-token ||
+| DELETE | /rt/users/third-party-identities/{identityType} |||
 
 **PUT:**
 
@@ -261,19 +271,4 @@ https://cn.uber.com
 /rt/safetynet/users/{userUuid}/delete-contacts
 ```
 
-**DELETE:**
-
-```
-/rt/payment/payment_profiles/{uuid}/
-/rt/locations/tag/locations/{tag}
-/rt/inventory/reminder/{uuid}
-/rt/invitations/{driverUUID}/contacts
-/rt/payment/payment_profiles/{uuid}/
-/rt/family/group/{groupUuid}
-/rt/family/group/{groupUuid}/members/{memberUuid}
-/rt/invitations/{userUuid}/contacts
-/rt/notifier/device-tokens/{deviceToken}
-/rt/payment/v2/payment_profiles/{uuid}
-/rt/reservation/{reservationUuid}
-/rt/users/third-party-identities/{identityType}
 ```
