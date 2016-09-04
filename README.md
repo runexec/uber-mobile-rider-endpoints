@@ -1,10 +1,7 @@
 # uber-mobile-rider-endpoints
 Unofficial Documentation of Uber Endpoints (Rider)
 
-Work in progress
-
 **Possible Hosts:**
-
 
 ```
 https://cn-dc1.uber.com 
@@ -269,6 +266,4 @@ https://cn.uber.com
 /rt/riders/me/suspend-walk-direction
 /rt/riders/{riderUuid}/disable-emergency
 /rt/safetynet/users/{userUuid}/delete-contacts
-```
-
 ```
