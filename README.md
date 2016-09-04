@@ -181,30 +181,30 @@ https://cn.uber.com
 | POST | /rt/referrals/create-indirect-invite | x-uber-token ||
 | POST | /rt/referrals/create-referral-code-links | x-uber-token ||
 | POST | /rt/reservation/{reservationUuid} || targetPickupTimeMS <br /> pickupTimeWindowMS <br /> pickupLocation <br /> destinationLocation <br /> passengerCapacity <br /> vehicleView |
-| POST | /rt/riders/create-promotion-redemption-override |||
-| POST | /rt/riders/me/accept-fare-split |||
-| POST | /rt/riders/me/add-expense-info |||
-| POST | /rt/riders/me/client-status |||
-| POST | /rt/riders/me/decline-fare-split |||
-| POST | /rt/riders/me/fare-estimate |||
-| POST | /rt/riders/me/invite-fare-split |||
-| POST | /rt/riders/me/pickup |||
-| POST | /rt/riders/me/schedule-surge-drop |||
-| POST | /rt/riders/me/select-payment-profile |||
-| POST | /rt/riders/me/select-profile |||
-| POST | /rt/riders/me/set-use-credits |||
-| POST | /rt/riders/me/status |||
-| POST | /rt/riders/me/uninvite-fare-split |||
-| POST | /rt/riders/{riderUuid}/commute-optin-state |||
-| POST | /rt/riders/{riderUuid}/enable-emergency |||
-| POST | /rt/riders/update-national-id |||
-| POST | /rt/rtnow/add-credentials |||
-| POST | /rt/rtnow/check-credentials |||
-| POST | /rt/safetynet/users/{userUuid}/create-contacts |||
-| POST | /rt/sharetrip/fetch |||
-| POST | /rt/support/contacts/appease-bad-route |||
+| POST | /rt/riders/create-promotion-redemption-override | x-uber-token ||
+| POST | /rt/riders/me/accept-fare-split | x-uber-token ||
+| POST | /rt/riders/me/add-expense-info | x-uber-token ||
+| POST | /rt/riders/me/client-status | x-uber-token ||
+| POST | /rt/riders/me/decline-fare-split | x-uber-token ||
+| POST | /rt/riders/me/fare-estimate | x-uber-token | pickupLocation <br /> destination|
+| POST | /rt/riders/me/invite-fare-split | x-uber-token | invites |
+| POST | /rt/riders/me/pickup | x-uber-token | vehicleViewId <br /> pickupLocation|
+| POST | /rt/riders/me/schedule-surge-drop | x-uber-token | vehicleViewId <br /> pickupLocation |
+| POST | /rt/riders/me/select-payment-profile | x-uber-token ||
+| POST | /rt/riders/me/select-profile | x-uber-token | profileUUID |
+| POST | /rt/riders/me/set-use-credits | x-uber-token | useCredits |
+| POST | /rt/riders/me/status | x-uber-token ||
+| POST | /rt/riders/me/uninvite-fare-split | x-uber-token | invitee |
+| POST | /rt/riders/{riderUuid}/commute-optin-state | x-uber-token | commuteOptInState |
+| POST | /rt/riders/{riderUuid}/enable-emergency | x-uber-token ||
+| POST | /rt/riders/update-national-id | x-uber-token | nationalId |
+| POST | /rt/rtnow/add-credentials | x-uber-uuid <br /> x-uber-token | authCode |
+| POST | /rt/rtnow/check-credentials | x-uber-uuid <br /> x-uber-token ||
+| POST | /rt/safetynet/users/{userUuid}/create-contacts | contacts | x-uber-token |
+| POST | /rt/sharetrip/fetch || request |
+| POST | /rt/support/contacts/appease-bad-route | x-uber-token | tripId <br /> reasonId |
 | POST | /rt/support/contacts/appease-rider-cancellation |||
-| POST | /rt/support/nodes/{nodeId}/csat |||
+| POST | /rt/support/nodes/{nodeId}/csat | x-uber-token | tripId <br > reasonId |
 | POST | /rt/surge/input |||
 | POST | /rt/trips/{trip_id}/anonymous-number |||
 | POST | /rt/trips/{trip_id}/inbound-call |||
