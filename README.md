@@ -144,19 +144,19 @@ https://cn.uber.com
 | POST | /rt/mobrec/update-challenge-status | x-uber-token | challengeId <br /> status |
 | POST | /rt/navigation/v2/route | x-uber-token | origin <br /> destination |
 | POST | /rt/notifier/device-tokens |||
-| POST | /rt/offers/activate-offers |||
-| POST | /rt/offers/enroll-user |||
-| POST | /rt/offers/get-user-offers |||
-| POST | /rt/offers/unenroll-user |||
-| POST | /rt/onboarding/documents |||
-| POST | /rt/onboarding/dynamic-form/signup |||
-| POST | /rt/onboarding/dynamic-form/upgrade |||
-| POST | /rt/onboarding/dynamic-form/verify-phone |||
-| POST | /rt/onboarding/send_comms |||
-| POST | /rt/onboarding/step/{partnerUuid} |||
-| POST | /rt/onboarding/unified-step/{partnerUuid} |||
-| POST | /rt/onboarding/vehicle-inspection/email/{driverUUID} |||
-| POST | /rt/payment/payment_profiles/ |||
+| POST | /rt/offers/activate-offers | x-uber-token | offerUuids <br /> impressionUuid |
+| POST | /rt/offers/enroll-user | x-uber-token | termsVersion <br /> impressionUuid |
+| POST | /rt/offers/get-user-offers | x-uber-token ||
+| POST | /rt/offers/unenroll-user | x-uber-token | impressionUuid |
+| POST | /rt/onboarding/documents | x-uber-token ||
+| POST | /rt/onboarding/dynamic-form/signup || flow_type_city_id <br /> phone <br /> password |
+| POST | /rt/onboarding/dynamic-form/upgrade || client_uuid <br /> flow_type_city_id|
+| POST | /rt/onboarding/dynamic-form/verify-phone || phone_number <br /> sms_token |
+| POST | /rt/onboarding/send_comms | x-uber-token | type <br /> partnerUuid|
+| POST | /rt/onboarding/step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token | stepId |
+| POST | /rt/onboarding/unified-step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token | stepId |
+| POST | /rt/onboarding/vehicle-inspection/email/{driverUUID} | x-uber-token ||
+| POST | /rt/payment/payment_profiles/ | x-uber-token | cardNumber <br /> cardCode <br /> cardExpirationMonth <br /> cardExpirationYear <br /> billingZip <br /> billingCountryIso2 <br /> tokenData <br /> tokenType <br /> token_type |
 | POST | /rt/payment/payment_profiles/{id}/validation_code/send |||
 | POST | /rt/payment/payment-profiles/{uuid}/airtel-money/deposit |||
 | POST | /rt/payment/payment_profiles/{uuid}/reward |||
