@@ -157,32 +157,30 @@ https://cn.uber.com
 | POST | /rt/onboarding/unified-step/{partnerUuid} | x-uber-onboarding-variant <br /> x-uber-token | stepId |
 | POST | /rt/onboarding/vehicle-inspection/email/{driverUUID} | x-uber-token ||
 | POST | /rt/payment/payment_profiles/ | x-uber-token | cardNumber <br /> cardCode <br /> cardExpirationMonth <br /> cardExpirationYear <br /> billingZip <br /> billingCountryIso2 <br /> tokenData <br /> tokenType <br /> token_type |
-| POST | /rt/payment/payment_profiles/{id}/validation_code/send |||
-| POST | /rt/payment/payment-profiles/{uuid}/airtel-money/deposit |||
-| POST | /rt/payment/payment_profiles/{uuid}/reward |||
-| POST | /rt/payment/payment_profiles/{uuid}/reward |||
-| POST | /rt/payment/payment_profiles/{uuid}/validation_code/send |||
-| POST | /rt/payment/payment_profiles/{uuid}/validation_code/validate |||
-| POST | /rt/payment/payment_profiles/{uuid}/validation_code/validate |||
+| POST | /rt/payment/payment_profiles/{id}/validation_code/send | x-uber-token ||
+| POST | /rt/payment/payment-profiles/{uuid}/airtel-money/deposit | x-uber-token ||
+| POST | /rt/payment/payment_profiles/{uuid}/reward | x-uber-token | rewardData |
+| POST | /rt/payment/payment_profiles/{uuid}/validation_code/send | x-uber-token ||
+| POST | /rt/payment/payment_profiles/{uuid}/validation_code/validate | x-uber-token | code |
 | POST | /rt/payment/providers/airtel-money/account |||
 | POST | /rt/payment/providers/airtel-money/account/link |||
-| POST | /rt/payment/providers/airtel-money/validation-code/send |||
-| POST | /rt/payment/providers/airtel-money/validation-code/validate |||
+| POST | /rt/payment/providers/airtel-money/validation-code/send || mobilePhoneNumber |
+| POST | /rt/payment/providers/airtel-money/validation-code/validate || otpRequestToken |
 | POST | /rt/payment/v2/payment_profiles |||
-| POST | /rt/profiles/delete-profile |||
-| POST | /rt/profiles/get-profiles |||
-| POST | /rt/profiles/get-profile-theme-options |||
-| POST | /rt/profiles/onboard-user |||
-| POST | /rt/profiles/patch-profile |||
-| POST | /rt/profiles/request-verification |||
-| POST | /rt/profiles/update-profile |||
-| POST | /rt/questions/get-employee-feedback |||
-| POST | /rt/questions/record-employee-feedback |||
-| POST | /rt/referrals/bulk-invitation |||
-| POST | /rt/referrals/create-directed-referral-code-links |||
-| POST | /rt/referrals/create-indirect-invite |||
-| POST | /rt/referrals/create-referral-code-links |||
-| POST | /rt/reservation/{reservationUuid} |||
+| POST | /rt/profiles/delete-profile | x-uber-token | request |
+| POST | /rt/profiles/get-profiles | x-uber-token | request |
+| POST | /rt/profiles/get-profile-theme-options | x-uber-token | request |
+| POST | /rt/profiles/onboard-user | x-uber-token | request |
+| POST | /rt/profiles/patch-profile | x-uber-token | request |
+| POST | /rt/profiles/request-verification | x-uber-token | request |
+| POST | /rt/profiles/update-profile | x-uber-token | request |
+| POST | /rt/questions/get-employee-feedback | x-uber-token | request |
+| POST | /rt/questions/record-employee-feedback | x-uber-token | request |
+| POST | /rt/referrals/bulk-invitation | x-uber-token ||
+| POST | /rt/referrals/create-directed-referral-code-links | x-uber-token ||
+| POST | /rt/referrals/create-indirect-invite | x-uber-token ||
+| POST | /rt/referrals/create-referral-code-links | x-uber-token ||
+| POST | /rt/reservation/{reservationUuid} || targetPickupTimeMS <br /> pickupTimeWindowMS <br /> pickupLocation <br /> destinationLocation <br /> passengerCapacity <br /> vehicleView |
 | POST | /rt/riders/create-promotion-redemption-override |||
 | POST | /rt/riders/me/accept-fare-split |||
 | POST | /rt/riders/me/add-expense-info |||
