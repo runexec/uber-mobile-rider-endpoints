@@ -205,36 +205,35 @@ https://cn.uber.com
 | POST | /rt/support/contacts/appease-bad-route | x-uber-token | tripId <br /> reasonId |
 | POST | /rt/support/contacts/appease-rider-cancellation |||
 | POST | /rt/support/nodes/{nodeId}/csat | x-uber-token | tripId <br > reasonId |
-| POST | /rt/surge/input |||
-| POST | /rt/trips/{trip_id}/anonymous-number |||
-| POST | /rt/trips/{trip_id}/inbound-call |||
-| POST | /rt/trips/{tripUuid}/anonymous-on-demand |||
-| POST | /rt/trips/{tripUuid}/rider-cancel |||
-| POST | /rt/trips/{tripUuid}/rider-rate |||
-| POST | /rt/trips/{tripUuid}/rider-set-info |||
-| POST | /rt/trips/{tripUuid}/share-with-contacts |||
-| POST | /rt/users/apply-clients-promotions |||
-| POST | /rt/users/authenticate-third-party |||
-| POST | /rt/users/confirm-mobile |||
-| POST | /rt/users/fapiao/request |||
-| POST | /rt/users/login |||
-| POST | /rt/users/login |||
+| POST | /rt/surge/input | x-uber-token ||
+| POST | /rt/trips/{trip_id}/anonymous-number | x-uber-token | locale <br /> userType <br /> latitude <br /> longitude |
+| POST | /rt/trips/{trip_id}/inbound-call | x-uber-token | locale <br /> userType <br /> latitude <br /> longittude |
+| POST | /rt/trips/{tripUuid}/anonymous-on-demand | x-uber-token | context <br /> receiverUUID |
+| POST | /rt/trips/{tripUuid}/rider-cancel | x-uber-token ||
+| POST | /rt/trips/{tripUuid}/rider-rate | x-uber-token | rating |
+| POST | /rt/trips/{tripUuid}/rider-set-info | x-uber-token ||
+| POST | /rt/trips/{tripUuid}/share-with-contacts | x-uber-token | tripShareUrl <br /> senderName <br /> contacts |
+| POST | /rt/users/apply-clients-promotions |x-uber-token | code|
+| POST | /rt/users/authenticate-third-party ||credentials|
+| POST | /rt/users/confirm-mobile |x-uber-token|mobileToken <br /> strategy|
+| POST | /rt/users/fapiao/request |x-uber-token||
+| POST | /rt/users/login ||password|
 | POST | /rt/users/passwordless-signup |||
-| POST | /rt/users/passwordless-signup/add-password |||
-| POST | /rt/users/picture |||
-| POST | /rt/users/request-mobile-confirmation |||
-| POST | /rt/users/request-sms-verification |||
+| POST | /rt/users/passwordless-signup/add-password |x-uber-token||
+| POST | /rt/users/picture |x-uber-token| picture|
+| POST | /rt/users/request-mobile-confirmation |x-uber-token| user_uuid|
+| POST | /rt/users/request-sms-verification ||phone_number|
 | POST | /rt/users/reset-password |||
-| POST | /rt/users/rewards/{itemUUID}/action |||
-| POST | /rt/users/tag-user-public |||
-| POST | /rt/users/third-party-identities |||
+| POST | /rt/users/rewards/{itemUUID}/action |x-uber-token|type|
+| POST | /rt/users/tag-user-public |x-uber-token|name|
+| POST | /rt/users/third-party-identities |x-uber-token|identityType|
 | POST | /rt/users/two-factor-auth |||
-| POST | /rt/users/v2/request-mobile-confirmation |||
-| POST | /rt/users/v2/verify-password |||
-| POST | /rt/users/validate-promotion |||
-| POST | /rt/users/verify-password |||
-| POST | /rt/utunes/providers/{id}/start_trial |||
-| POST | /rt/utunes/rider/handshake |||
+| POST | /rt/users/v2/request-mobile-confirmation |x-uber-token||
+| POST | /rt/users/v2/verify-password |x-uber-token|password|
+| POST | /rt/users/validate-promotion ||promotionCode <br /> confirmed|
+| POST | /rt/users/verify-password |x-uber-token|| password <br /> app <br /> device |
+| POST | /rt/utunes/providers/{id}/start_trial |x-uber-token|trial|
+| POST | /rt/utunes/rider/handshake |x-uber-token|provider_id <br />trip_uuid<br />access_token|
 
 
 
